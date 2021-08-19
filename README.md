@@ -2,7 +2,7 @@
 $ uvicorn main:app
 
 ### To Run for All Hosts
-## cd app
+## cd into app
 $ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ### To Build
