@@ -68,10 +68,10 @@ pipeline {
                                     sh label: 'build', script: '''
                                     echo "Download package from s3 bucket..."
                                     VERSION=`cat app/VERSION`
-                                    aws s3 cp s3://usc-tony-infinity-us-east-1/infinity-$VERSION-py3-none-any.whl /tmp
+                                    aws s3 cp s3://test101guo/fastapi_example-1.0.0-py3-none-any.whl /tmp
                                     source venv/bin/activate
                                     which pip
-                                    pip install /tmp/infinity-$VERSION-py3-none-any.whl
+                                    pip install /tmp/fastapi_example-1.0.0-py3-none-any.whl
                                     pip list
                                     export PYTHONPATH="./app"
                                     cd app
